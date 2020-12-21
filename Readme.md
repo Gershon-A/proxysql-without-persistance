@@ -1,8 +1,11 @@
 #### Build image
 `docker build  -t gershon-proxysql .`
 #### Run
+
 export CLUSTER_NAME=percona_proxysql
-export MYPATH=C:\\Users\\GershonA\\Documents\\Project\\proxysql
+
+export MYPATH=C:\\Users\\xxxxx\\Documents\\Project\\proxysql
+
 ```
 docker run -d --name=$CLUSTER_NAME \
 -v "$MYPATH/config/secrets.env":/proxysql/secrets/secrets.env \

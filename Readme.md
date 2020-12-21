@@ -1,9 +1,10 @@
 #### Build image
 `docker build  -t gershon-proxysql .`
 #### Run
+export CLUSTER_NAME=percona_proxysql
 export MYPATH=C:\\Users\\GershonA\\Documents\\Project\\proxysql
 ```
-docker run -d --name=cluster3_proxysql3 \
+docker run -d --name=$CLUSTER_NAME \
 -v "$MYPATH/config/secrets.env":/proxysql/secrets/secrets.env \
 -v "$MYPATH/config/proxysql.cnf.tpl":/proxysql/conf/proxysql.cnf.tpl \
 -p 16032:6032 \
@@ -16,7 +17,7 @@ gershon-proxysql
 
 #### Run with variables
 ```
-docker run -d --name=cluster3_proxysql3 \
+docker run -d --name=$CLUSTER_NAME \
 -v "$MYPATH/config/secrets.env":/proxysql/secrets/secrets.env \
 -v "$MYPATH/config/proxysql.cnf.tpl":/proxysql/conf/proxysql.cnf.tpl \
 -e PROXYSQL_CONF_CHECK_INTERVAL=15 \

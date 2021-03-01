@@ -1,6 +1,6 @@
 FROM debian:stretch
 LABEL maintainer="Gershon Alvais <gershon.alvais@testproject.com>"
-ENV VERSION 2.0.15
+ENV VERSION 2.0.17
 
 RUN apt-get update && \
     apt-get install -y wget mysql-client inotify-tools procps gettext-base && \

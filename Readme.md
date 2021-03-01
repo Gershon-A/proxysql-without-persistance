@@ -1,4 +1,4 @@
-https://github.com/Gershon-A/proxysql-without-persistance/actions/workflows/docker-image.yml/badge.svg
+![Build docker image workflow](https://github.com/Gershon-A/proxysql-without-persistance/actions/workflows/docker-image.yml/badge.svg)
  
 #### Build image
 `docker build  -t gershon-proxysql .`
